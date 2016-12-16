@@ -1,0 +1,33 @@
+<website>
+    <page name="index" title="home page">
+        <h1>welcome to my home page</h1>
+        <p>hi, this is my home page, here are some of my interests</p>
+
+        <ul>
+            <li><a href="interests/shouting.html">shouting</a></li>
+            <li><a href="interests/sleeping.html">sleeping</a></li>
+            <li><a href="interests/eating.html">eating</a></li>
+        </ul>
+    </page>
+    <directory name="interests">
+        <page name="shouting" title="shouting">
+            <h1>this is shouting page</h1>
+
+            <p>...</p>
+        </page>
+        <page name="sleeping" title="sleeping">
+            <h1>this is sleeping page</h1>
+
+            <p>...</p>
+        </page>
+        <page name="eating" title="eating">
+            <h1>this is eating page</h1>
+
+            <p>...</p>
+        </page>
+
+
+
+
+    </directory>
+</website>

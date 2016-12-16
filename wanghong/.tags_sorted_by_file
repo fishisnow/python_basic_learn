@@ -1,0 +1,43 @@
+Huajiao_live	db.sql	/^CREATE TABLE Huajiao_live($/;"	t
+Huajiao_live.image	db.sql	/^	image varchar(255) NOT NULL default '' comment '直播封面',$/;"	F
+Huajiao_live.liveId	db.sql	/^	liveId int NOT NULL,$/;"	F
+Huajiao_live.location	db.sql	/^	location varchar(255) NOT NULL default '' comment '地点',$/;"	F
+Huajiao_live.praises	db.sql	/^	praises int NOT NULL DEFAULT 0  COMMENT '赞数',$/;"	F
+Huajiao_live.publishTime	db.sql	/^	publishTime int NOT NULL default 0 comment '发布日期',$/;"	F
+Huajiao_live.replies	db.sql	/^	replies int NOT NULL default 0,$/;"	F
+Huajiao_live.reposts	db.sql	/^	reposts int NOT NULL default 0,$/;"	F
+Huajiao_live.scrapedTime	db.sql	/^	scrapedTime timestamp NOT NULL comment '爬虫更新时间',$/;"	F
+Huajiao_live.title	db.sql	/^	title varchar(100) NOT NULL default '' comment '直播名称',$/;"	F
+Huajiao_live.userId	db.sql	/^	userId int NOT NULL,$/;"	F
+Huajiao_live.watches	db.sql	/^	watches int NOT NULL default 0 comment '观看人数',$/;"	F
+Huajiao_user	db.sql	/^CREATE TABLE Huajiao_user($/;"	t
+Huajiao_user.avatar	db.sql	/^    avatar VARCHAR(255) NOT NULL DEFAULT '' COMMENT '头像地址',$/;"	F
+Huajiao_user.experience	db.sql	/^    experience INT UNSIGNED NOT NULL DEFAULT 0 COMMENT '经验值',$/;"	F
+Huajiao_user.follow	db.sql	/^    follow INT UNSIGNED NOT NULL DEFAULT 0 COMMENT '关注数',$/;"	F
+Huajiao_user.followed	db.sql	/^    followed INT UNSIGNED NOT NULL DEFAULT 0 COMMENT '粉丝数',$/;"	F
+Huajiao_user.level	db.sql	/^    level INT UNSIGNED NOT NULL DEFAULT 0 COMMENT '等级',$/;"	F
+Huajiao_user.scrapedTime	db.sql	/^    scrapedTime timestamp NOT NULL COMMENT '爬虫时间',$/;"	F
+Huajiao_user.supported	db.sql	/^    supported INT UNSIGNED NOT NULL DEFAULT 0 COMMENT '赞数',$/;"	F
+Huajiao_user.userId	db.sql	/^	userId INT UNSIGNED NOT NULL,$/;"	F
+Huajiao_user.userName	db.sql	/^    userName VARCHAR(255) NOT NULL DEFAULT '' COMMENT '昵称',$/;"	F
+BeautifulSoup	huajiao.py	/^from bs4 import BeautifulSoup$/;"	i
+data	huajiao.py	/^data = getUserData(userId)$/;"	v
+filterLiveIds	huajiao.py	/^def filterLiveIds(url):$/;"	f
+getUserData	huajiao.py	/^def getUserData(userId):$/;"	f
+getUserId	huajiao.py	/^def getUserId(liveId):$/;"	f
+pymysql	huajiao.py	/^import pymysql$/;"	i
+re	huajiao.py	/^import re$/;"	i
+updateUserData	huajiao.py	/^def updateUserData(data):$/;"	f
+url	huajiao.py	/^url = 'http:\/\/www.huajiao.com'$/;"	v
+urllib2	huajiao.py	/^import urllib2$/;"	i
+userId	huajiao.py	/^userId = '68670261'$/;"	v
+getMysqlConn	util.py	/^def getMysqlConn():$/;"	f
+getNowTime	util.py	/^def getNowTime():$/;"	f
+pymysql	util.py	/^import pymysql$/;"	i
+time	util.py	/^import time$/;"	i
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
